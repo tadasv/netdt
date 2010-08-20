@@ -1,0 +1,5 @@
+This is one of my first personal projects I've been working on. It is so old
+that looking at the code gives me creeps :D. Back in the day (when I was
+building a hacker personality :)) I was amazed by networking, so I wrote netdt
+- a LAN scanner that uses ARP protocol to find which hosts are up. Code
+compiles only on Linux and you will need root privileges to run it.
