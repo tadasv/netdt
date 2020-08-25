@@ -21,7 +21,7 @@
 #ifndef __NETDT_NETWORK_H__
 #define __NETDT_NETWORK_H__ 1
 
-void inline net_calc_network(struct in_addr, struct in_addr);
+void net_calc_network(struct in_addr, struct in_addr);
 in_addr_t net_next_ip(struct in_addr);
 
 #endif

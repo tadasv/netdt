@@ -78,42 +78,42 @@ void iface_init(int socket, char *name)
 	PDEBUG("iface_init() ended\n");
 }
 
-int inline iface_get_index()
+int iface_get_index()
 {
 	return (interface.index);
 }
 
-int inline iface_get_mtu()
+int iface_get_mtu()
 {
 	return (interface.mtu);
 }
 
-int inline iface_get_metric()
+int iface_get_metric()
 {
 	return (interface.metric);
 }
 
-short inline iface_get_flags()
+short iface_get_flags()
 {
 	return (interface.flags);
 }
 
-void inline iface_get_ip(struct in_addr *ip)
+void iface_get_ip(struct in_addr *ip)
 {
 	(*ip) = interface.ip;
 }
 
-void inline iface_get_netmask(struct in_addr *netmask)
+void iface_get_netmask(struct in_addr *netmask)
 {
 	(*netmask) = interface.netmask;
 }
 
-void inline iface_get_broadcast(struct in_addr *broadcast)
+void iface_get_broadcast(struct in_addr *broadcast)
 {
 	(*broadcast) = interface.broadcast;
 }
 
-void inline iface_get_mac(struct ether_addr *mac)
+void iface_get_mac(struct ether_addr *mac)
 {
 	(*mac) = interface.mac;
 }

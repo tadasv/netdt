@@ -27,13 +27,13 @@
 
 /* Initialize global interface variables, call first */
 void iface_init(int, char *);
-int inline iface_get_index();
-int inline iface_get_mtu();
-int inline iface_get_metric();
-short inline iface_get_flags();
-void inline iface_get_ip(struct in_addr *);
-void inline iface_get_netmask(struct in_addr *);
-void inline iface_get_broadcast(struct in_addr *);
-void inline iface_get_mac(struct ether_addr *);
+int iface_get_index();
+int iface_get_mtu();
+int iface_get_metric();
+short iface_get_flags();
+void iface_get_ip(struct in_addr *);
+void iface_get_netmask(struct in_addr *);
+void iface_get_broadcast(struct in_addr *);
+void iface_get_mac(struct ether_addr *);
 		
 #endif

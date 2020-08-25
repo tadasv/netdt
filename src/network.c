@@ -25,7 +25,7 @@ struct network
 	unsigned long start, end;
 } network;
 
-void inline net_calc_network(struct in_addr ip, struct in_addr netmask)
+void net_calc_network(struct in_addr ip, struct in_addr netmask)
 {
 	network.start = ip.s_addr & netmask.s_addr; /* sitas isvis niekam nereikalingas, reikia sugalvoti kur i kisti */
 	network.end = ip.s_addr | (~netmask.s_addr);
